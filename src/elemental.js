@@ -20,7 +20,7 @@
         });
 
         if(typeof fn === 'function') {
-            return fn($element);
+            return new fn($element);
         } else {
             if (window.console && console.warn) {
                 console.warn("elementalJS: Unable to find behavior:", behavior);
